@@ -40,11 +40,15 @@ namespace WeatherApp
                         Console.WriteLine($"Description: {weatherDescription}");
                         Console.WriteLine($"Temperature: {temperature}°C");
                         Console.WriteLine($"Humidity: {humidity}%");
+
+                        Console.ReadLine();
                     }
                     else
                     {
                         Console.WriteLine($"Failed to retrieve weather data. Error: {response.ReasonPhrase}");
                     }
+
+                    Console.ReadLine();
                 }
             }
             catch (Exception ex)
